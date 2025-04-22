@@ -11,6 +11,8 @@ spec:
       github:
         owner: ashal148148
         repo: gitops-cert-level-3-examples
+        filters: 
+        - labels: ["preview-ready"]
       requeueAfterSeconds: 180
   template:
     metadata:
