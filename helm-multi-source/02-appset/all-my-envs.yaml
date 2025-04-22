@@ -32,7 +32,15 @@ spec:
       - env: prod-us
         region: us 
         type: prod
-        version: prod         
+        version: prod    
+      - env: integration-gpu
+        type: non-prod
+        region: us
+        version: qa  
+      - env: integration-non-gpu
+        type: non-prod
+        region: us
+        version: qa    
   template:      
     metadata:
       name: '{{.env}}' 
